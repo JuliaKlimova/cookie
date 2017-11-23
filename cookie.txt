@@ -1,0 +1,22 @@
+;testcookie;dialog.filestackapi.com;/dialog/comm_iframe;null;false
+ajs_user_id;8008389;.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+ajs_group_id;null;.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+videospeed;1;courses.way2automation.com;/;null;false
+signed_in;true;courses.way2automation.com;/;null;false
+ahoy_events;%5B%7B%22id%22%3A%22d1ebbcb2-6939-43d4-b094-60f421ee7495%22%2C%22name%22%3A%22%24view%22%2C%22properties%22%3A%7B%22url%22%3A%22https%3A//courses.way2automation.com/%3Fsa%3DeyJ1c2VyX2lkIjo4MDA4Mzg5LCJleHBpcmVzX2F0IjoxNTExMTIwMjI3LjczOTE2NDYsInNjaG9vbF9pZCI6NjczLCJhdXRoZW50aWNhdGlvbl90b2tlbiI6Ilp0enhMWGQ2SE5rRHE2dnN0RG9Tem1zWXpaY1ZYcmg0b3cifQ%253D%253D--3c671a991e0a10fdcbee20d3717961a931f9c781%22%2C%22title%22%3A%22Way2Automation%22%2C%22page%22%3A%22/%22%7D%2C%22time%22%3A1511119629.302%7D%5D;courses.way2automation.com;/;Sun Jan 18 15:45:19 SAMT 1970;false
+ahoy_visitor;08a85b12-0817-4725-b5f6-b1a884eca7cd;courses.way2automation.com;/;Mon Jan 19 09:16:31 SAMT 1970;false
+site_preview;logged_in;courses.way2automation.com;/;null;false
+request_method;POST;courses.way2automation.com;/;null;false
+_gat_fedoraTracker;1;.way2automation.com;/;Sun Jan 18 15:45:19 SAMT 1970;false
+videoPlayer;html5;courses.way2automation.com;/;null;false
+_session_id;dcf0186d43edfd867729163b359dd7b0;courses.way2automation.com;/;Sun Jan 18 16:28:31 SAMT 1970;false
+_gid;GA1.2.1386748581.1511119618;.way2automation.com;/;Sun Jan 18 15:46:46 SAMT 1970;false
+wistiaVisitorKey;null;courses.way2automation.com;/;null;false
+_gat;1;.way2automation.com;/;Sun Jan 18 15:45:19 SAMT 1970;false
+affiliate_code;;courses.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+_ga;GA1.2.1014760429.1511119618;.way2automation.com;/;Mon Jan 19 09:16:31 SAMT 1970;false
+__zlcmid;jZguPTEqJzynwr;.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+ajs_anonymous_id;%22022647d4-87cc-4e5e-8691-c48bede945a3%22;.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+_gat_teachableTracker;1;.way2automation.com;/;Sun Jan 18 15:45:19 SAMT 1970;false
+__distillery;528bf60_bb7e8333-6f38-4e3f-b644-56eb341478f8-4e5af3126-5ac5f23848de-867e;courses.way2automation.com;/;Mon Jan 19 00:30:55 SAMT 1970;false
+ahoy_visit;6d34f096-a1bb-4e6e-982f-de4743b4ea0c;courses.way2automation.com;/;Sun Jan 18 15:45:34 SAMT 1970;false
