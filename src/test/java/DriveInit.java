@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class DriveInit {
-    //IP машины, на которой установлен Google Chrome и запущен Selenium Server
     public static WebDriver driver;
 
     @BeforeClass

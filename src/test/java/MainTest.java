@@ -1,13 +1,8 @@
-
-
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import org.apache.commons.logging.LogFactory;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import java.io.*;
@@ -16,14 +11,13 @@ import java.util.Set;
 import java.util.StringTokenizer;
 
 public class MainTest extends DriveInit {
-    @Title("Class Title : SimbirSoft test")
+    @Title("Class Title : Login with username and password")
     @Test
     public void case00() throws Exception {
         driver.get("http://way2automation.com/");
         driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[2]/div/div[2]/div/a[1]")).click();
         // Store the current window handle
         String winHandleBefore = driver.getWindowHandle();
-        // Perform the click operation that opens new window
         // Switch to new window opened
         for(String winHandle : driver.getWindowHandles()){
             driver.switchTo().window(winHandle);
@@ -31,30 +25,32 @@ public class MainTest extends DriveInit {
 
         login("jul.klimova2011@yandex.ru","19941111");
         writeCookiesToFile(driver);
-        driver.manage().addCookie(readCookiesFromFile());
+        Assert.assertTrue("Case 00 is failed.",
+                driver.getCurrentUrl().contains("https://courses.way2automation.com/"));
+        System.out.println("Case 00 is passed.");
 
     }
 
-    @Title("Class Title : SimbirSoft test")
+    @Title("Class Title : Login using cookie")
     @Test
     public void case01() throws Exception {
         driver.get("http://way2automation.com/");
         driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[2]/div/div[2]/div/a[1]")).click();
         // Store the current window handle
         String winHandleBefore = driver.getWindowHandle();
-        // Perform the click operation that opens new window
         // Switch to new window opened
         for(String winHandle : driver.getWindowHandles()){
             driver.switchTo().window(winHandle);
         }
 
         driver.manage().addCookie(readCookiesFromFile());
-        //driver.get("https://sso.teachable.com/secure/673/current_user/subscriptions");
-        System.out.println("Case 01 is passed. http://simbirsoft.com is responding");
-        Thread.sleep(2000);
+
+        Assert.assertTrue("Case 01 is failed.",
+                driver.getCurrentUrl().contains("https://courses.way2automation.com/"));
+        System.out.println("Case 01 is passed.");
     }
 
-
+    //Функция записи куки в файл
     public void writeCookiesToFile(WebDriver webDriver) {
         File file = new File("cookie.txt");
         try {
@@ -72,7 +68,7 @@ public class MainTest extends DriveInit {
             System.out.println("Ошибка при записи куки - "+ e.getLocalizedMessage());
         }
     }
-
+    //Функция чтения куки из файла
     public Cookie readCookiesFromFile() {
         Cookie cookie = new Cookie("","");
         try {
